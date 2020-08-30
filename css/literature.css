@@ -1,0 +1,208 @@
+Html{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-size: 62.5%;
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+
+#content{
+	transition: margin-left .7s;
+	background-color: #fff;
+	overflow: hidden;
+	width: 100%;
+	border-right: 5px solid black;
+/*	height: 100%;*/
+/*	box-shadow: 2px 0px 7px rgba(0, 0, 0, .5);*/
+	z-index: 1;
+	position: relative;
+}
+
+/*navbar*/
+
+.navbar {
+	background-color: #258825;
+	color: white;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	height: 10%;
+	text-align: center;
+
+}
+
+.item{
+	padding: auto 0px;
+	margin: auto 2%;
+	height: auto;
+/*	background-color: red;*/
+	text-align: center;
+}
+
+.item-2 {
+	flex-grow: 1;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+
+}
+
+.line{
+	height: .3rem;
+	width: 2.5rem;
+	margin: 3px 0px;
+	background-color: white;
+}
+
+
+.main-menu-list {
+	font-size: 2rem;
+	color: white;
+	padding: 10px 0px; 
+}
+
+.main-menu-list-icon{
+	padding: 0px;
+	margin: 0px 20px;
+}
+
+/*end of navbar*/
+
+/*sidebar*/
+
+.sidebar{
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 0;
+	top: 0;
+	right: 0px;
+	background-color: #fff;
+	transition: .7s;
+}
+
+.sidebar-options {
+	margin-top: 51px;
+}
+
+.sidebar a {
+	display: block;
+	padding: 10px 0px;
+	font-size: 15px;
+	width: 100%;
+	white-space: nowrap;
+}
+
+.sidebar-header {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0px;
+	background-color: #258825;
+
+}
+
+.sidebar .close:link {
+	text-decoration: none;
+}
+
+.search-page{
+	background-color: yellow;
+	color: #222;
+	position: fixed;
+	height: 100%;
+	width: 80%;
+	left: 100%;
+	top: 50px;
+	z-index: 3;
+	transition: .7s;
+	
+}
+
+.search-options{
+	display: flex;
+	justify-content: space-between;	
+	width: 100%;
+	background-color: red;
+}
+
+.search-options a:link{
+	text-decoration: none;
+}
+
+.search-options-item {
+	padding: 10px 20px;
+}
+
+.search-options-item-1 {
+	flex-grow: 2; 
+}
+
+.search-input {
+	margin: 0px 0px;
+	
+}
+.search-wrapper {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+	margin-left: 0px;
+	width: 50%;
+}
+
+/*end of sidebar*/
+
+.highlight {
+	background-color: yellow;
+}
+
+/*Literature*/
+
+.text  {
+	text-align: justify;
+}
+
+.text p {
+	text-indent: 1rem;
+}
+
+.pagination{
+	font-style: italic;
+	color: red;
+	font-size: .8rem;
+}
+
+.header {
+	text-align: center;
+	font-weight: bold;
+}
+
+.center {
+	text-align: center;
+}
+
+.bookMargin {
+	padding: 2em;
+	margin-top: 20%;
+}
+
+.bookMargin p{
+	font-size: 1rem;;
+}
+
+.search-wrapper {
+	text-align: center;
+}
+
+/*End of Literature*/
+

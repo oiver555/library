@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="stylesheet" href="css/index.css">
+<script src="https://kit.fontawesome.com/f8b5ef37f9.js" crossorigin="anonymous"></script>
+<script src="js/lunr/lunr.js"></script>
+<script type="text/javascript" src="js/mark.js/dist/mark.js" charset="utf-8"></script>
+<title>VTH Writings</title>
+<script>
+	function openSearchPage(){		
+			document.getElementById('menu').style.width = '80%';
+			document.getElementById('content').style.marginLeft = '-80%';
+			document.getElementById('open-search-page').style.left = '20%';
+			document.getElementById('toggle').innerHTML = 'Search'
+		}
+	
+	function openSlideMenu(){
+		document.getElementById('menu').style.width = '80%';
+		document.getElementById('content').style.marginLeft = '-80%';
+		document.getElementById('toggle').innerHTML = 'Main';
+
+	}
+	
+	function closeSlideMenu(){
+		
+			if 
+				(document.getElementById('toggle').innerHTML == 'Search') 
+			{
+				document.getElementById('open-search-page').style.left = '100%';
+				document.getElementById('toggle').innerHTML = 'Main';
+
+			} else if 
+				(document.getElementById('toggle').innerHTML == 'Main') 
+
+			{
+				document.getElementById('menu').style.width = '0px';
+				document.getElementById('content').style.marginLeft = '0%';
+			} else 
+				
+			{
+				document.getElementById('menu').style.width = '80%';
+				document.getElementById('content').style.marginLeft = '-80%';
+				document.getElementById('open-search-page').style.left = '20%';		document.getElementById('toggle').innerHTML = 'Search';
+			}
+
+			
+		}
+	
+	
+</script>
+
+
+</head>
+
+<body>
+
+<!--navbar-->
+<nav  id="content">		
+			
+			<div class="navbar">
+				<div class="item item-1">
+					<h1>VTH Writings</h1>
+				</div>
+				
+				<div>
+					<div class="item search-icon" onclick="openSearchPage()">
+						<i class="fas fa-search fa-2x" style="color:white;"></i>
+					</div>
+				</div>
+				
+				<div>
+					<a href="#" onclick="openSlideMenu()">
+						<div class="item menu-icon">
+							<div class="line line-1"></div>
+							<div class="line line-2"></div>
+							<div class="line line-3"></div>		
+						</div>
+					</a>
+				</div>	
+			</div>				
+			
+<div>
+	<div class="main-menu-list">
+		<div><i class="fas fa-book main-menu-list-icon"></i>Publications</div>
+		<div><i class="fas fa-book-reader main-menu-list-icon"></i>History</div>
+		<div><i class="fas fa-school main-menu-list-icon"></i>Study Center</div>
+		<div><i class="fas fa-user main-menu-list-icon"></i>About Victor T. Houteff</div>
+	</div>
+</div>
+	
+</nav>
+
+<!--sidebar-->
+
+<div id="menu" class="sidebar">
+	<!--Back Button-->
+		<div class="sidebar-header">
+			<a href="#" class="close" onclick="closeSlideMenu()">
+				<i class="fas fa-arrow-left fa-2x"></i>
+				<span id="toggle">Main</span>
+			</a>
+		</div>
+		
+		<div class="sidebar-options">
+			<a>Settings</a>
+			<a>Main Language</a>
+			<a>Study Center</a>
+			<a onclick="openSearchPage()">Search</a>
+			<a>User Manual</a>	
+		</div>
+			
+</div>
+	
+<!--search page-->
+
+<div class="search-page" id="open-search-page">
+			<div class="search-options">
+				<div class="search-options-item search-options-item-1">Search in:</div>
+				<a href="#">
+					<div class="search-options-item search-options-item-2">All Literature</div>
+				</a>
+			</div>
+			
+				<div class="search-wrapper">
+					<input id="search-id" class="search-input" type="text" placeholder="Search: see help ?->">					
+					<button class="search-btn">Search</button>
+				</div>
+				
+			<h2>Results:</h2>
+
+
+			<div class="results-wrapper"></div>
+</div>
+	
+
+
+
+
+</body>
+
+<script src="js/search.js"></script>
+</html>
